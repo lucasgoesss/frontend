@@ -1,0 +1,77 @@
+body {
+    background-color: #0D0C0F;
+    color: #E1E1E6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .banner {
+        padding: 6rem 2rem;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .products {
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .product-card {
+        flex-basis: 45%;
+        padding: 1rem;
+    }
+}
+
+.banner {
+    text-align: center;
+    padding: 9rem;
+    background: url("../../assets/pngegg 1.png");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.banner h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #E1E1E6;
+}
+
+.banner p {
+    font-size: 0.9rem;
+    color: #E1E1E6;
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        padding: 5rem;
+    }
+
+    .banner h2 {
+        font-size: 2.5rem;
+        margin-bottom: 9rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+}

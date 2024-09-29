@@ -1,0 +1,225 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Estilos do logo */
+.logo {
+    font-size: 1.5rem;
+    color: #E1E1E6;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.menu-sandwich {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 0;
+    /* Remove o alinhamento automático à direita */
+    align-items: flex-start;
+    /* Alinha o ícone à esquerda */
+}
+
+.menu-sandwich span {
+    width: 25px;
+    height: 3px;
+    background-color: #E1E1E6;
+    margin: 4px 0;
+}
+
+/* Estilos para o ícone de logout */
+.logout-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.logout-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+
+.logout-icon:hover svg {
+    color: #ff0000;
+}
+
+/* Exibe o menu-sanduíche em telas pequenas */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        margin-left: 10%;
+    }
+
+    .menu-sandwich {
+        display: flex;
+    }
+
+    .search {
+        display: none;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .search.active {
+        display: block;
+    }
+
+    .favorites {
+        display: none;
+    }
+
+    .logout-icon {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 15%;
+    }
+}
+
+/* Layout do header em telas grandes */
+@media (min-width: 1024px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-right: 2rem;
+        /* Espaçamento entre o logo e a barra de pesquisa */
+    }
+
+    .search {
+        flex-grow: 1;
+        margin-right: 2rem;
+        /* Espaçamento entre a barra de pesquisa e o botão "Novo Prato" */
+    }
+
+    .favorites {
+        margin-right: 1rem;
+        /* Espaçamento entre o botão "Novo Prato" e o ícone de logout */
+    }
+}
+
+/* Estilos para o painel que cobre a tela */
+.full-screen-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0A0A0B;
+    /* Cor de fundo mais escura */
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.full-screen-panel.open {
+    display: flex;
+}
+
+.panel-content {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+/* Botão de fechar o painel */
+.close-panel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Título do painel "Menu" */
+.panel-title {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 40px;
+    /* Ajusta a posição ao lado do botão de fechar */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Barra de pesquisa no painel */
+.panel-search {
+    width: 90%;
+    /* Reduz a largura para centralizar */
+    margin: 0 auto 20px auto;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background-color: #1F1F1F;
+    /* Cor de fundo mais escura para a barra de pesquisa */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-search::placeholder {
+    color: #555;
+    /* Cor mais clara para o placeholder */
+}
+
+.panel-search-icon {
+    margin-right: 10px;
+    color: #999;
+    /* Cor do ícone de lupa */
+}
+
+/* Menu de links dentro do painel */
+.panel-menu {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* Largura similar à da barra de pesquisa */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.panel-link {
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.panel-link:hover {
+    color: #92000E;
+    /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilo do rodapé, caso você queira incluir */
+/* .footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8rem;
+    color: #777;
+} */

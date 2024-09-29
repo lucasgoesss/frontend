@@ -1,0 +1,125 @@
+/* Container centralizado */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* Espaçamento interno */
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* Garante que o container esteja sempre centralizado */
+}
+
+/* Logo e Sing-In */
+.logo-sing-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-sing-in svg {
+    margin-bottom: 10px;
+}
+
+.logo-sing-in h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+/* Formulário */
+.form-container {
+    background-color: #1C1B1E;
+    padding: 3rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #C4C4CC;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    background-color: #0D1D25;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem;
+    color: white;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #7C7C8A;
+}
+
+button {
+    background-color: #92000E;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a10011;
+}
+
+p,
+.create-account {
+    margin-top: 1rem;
+    text-align: center;
+    color: #E1E1E6;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+p a,
+.create-account:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Alinha os itens em coluna em telas pequenas */
+        padding: 20px;
+        /* Espaçamento interno */
+    }
+
+    .logo-sing-in h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

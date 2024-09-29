@@ -1,0 +1,53 @@
+.new-dish-button {
+    background-color: #750310;
+    color: #E1E1E6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Espaçamento acima do botão */
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: #E1E1E6;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 100%;
+    /* Para evitar rolagem lateral */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.back-button {
+    color: #E1E1E6;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    /* Reduz o tamanho da fonte para melhor adaptação */
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+        /* Aumenta o tamanho da fonte em telas maiores */
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 80%;
+        /* Largura máxima em telas grandes */
+    }
+}

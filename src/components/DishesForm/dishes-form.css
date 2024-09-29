@@ -1,0 +1,95 @@
+.add-dish-form {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    /* Faz o formulário ocupar 100% da largura */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input,
+select,
+textarea {
+    background-color: #0D1D25;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #E1E1E6;
+    width: 100%;
+    /* Faz os campos ocuparem a largura total disponível */
+    max-width: 300px;
+    /* Limite para a largura dos campos em telas pequenas */
+}
+
+.file-input {
+    background-color: #0D1D25;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.file-input input {
+    display: none;
+}
+
+.ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ingredient {
+    background-color: #192227;
+    border-radius: 5px;
+    padding: 5px;
+    flex: 1 1 calc(50% - 10px);
+    /* Dois ingredientes por linha */
+}
+
+.ingredient input {
+    background: none;
+    border: none;
+    color: #E1E1E6;
+    width: 100%;
+    /* Campos de ingrediente ocupam a largura total */
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #750310;
+    color: #E1E1E6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 768px) {
+
+    input,
+    select,
+    textarea {
+        max-width: none;
+        /* Remove o limite de 300px em telas maiores */
+    }
+
+    .ingredient {
+        flex: 1 1 calc(33.33% - 10px);
+        /* Três ingredientes por linha em telas grandes */
+    }
+}
