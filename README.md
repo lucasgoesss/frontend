@@ -24,8 +24,8 @@ npm ou yarn (Gerenciador de pacotes)
 
 Instalação
 
-Clone o repositório:
-git clone https://github.com/usuario/moema-restaurante-frontend.git
+Clone o repositório: https://github.com/lucasgoesss/frontend.git
+git clone 
 
 Navegue até o diretório do projeto:
 cd "\desafio-final\frontend"
@@ -35,7 +35,6 @@ npm install
 
 Inicie o servidor de desenvolvimento:
 npm start
-
 
 Link do Deploy do Frontend:
 https://frontendfinal1.netlify.app
